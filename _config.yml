@@ -25,5 +25,6 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
+url: /yojigen/
 baseurl: /yojigen
 production_url: http://rschiang.github.io/yojigen
