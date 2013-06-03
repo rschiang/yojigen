@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html lang="zh-tw">
-<head>
-	<title>Yojigen</title>
-</head>
-<body>
+---
+layout: master
+---
 	<h1>Yojigen</h1>
-</body>
-</html>
+	<ul>
+	{% for post in site.posts %}
+		<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+	{% endfor %}
+	</ul>
