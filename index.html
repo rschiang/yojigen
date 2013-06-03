@@ -1,9 +1,13 @@
 ---
 layout: master
 ---
-	<h1>Yojigen</h1>
-	<ul>
-	{% for post in site.posts %}
-		<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-	{% endfor %}
-	</ul>
+<div class="row">
+	<div class="large-12 columns">
+		<h1>Yojigen</h1>
+		<ul>
+		{% for post in site.posts %}
+			<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+		{% endfor %}
+		</ul>
+	</div>
+</div>

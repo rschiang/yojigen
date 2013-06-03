@@ -3,14 +3,15 @@
 
 permalink: /:title
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", \
+          ".sass-cache", "scss", "config.rb", "MIT-LICENSE.txt"]
 pygments: true
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
 title : Yojigen
-tagline: SITCON
+tagline: 
 author : 
   name : Poren Chiang
   email : ren.chiang@gmail.com
@@ -24,4 +25,5 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
+url: /
 production_url : http://rschiang.github.io/yojigen
