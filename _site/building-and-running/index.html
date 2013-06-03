@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>Yojigen</title>
+  <title>Building & Running - Yojigen</title>
   <link rel="stylesheet" href="/yojigen/css/app.css" />
   <script src="/yojigen/js/vendor/custom.modernizr.js"></script>
 
@@ -54,9 +54,41 @@
 			</ul>
 		</nav>
 		<section class="large-9 columns">
-			<h1>Yojigen</h1>
-<p>Yojigen is an ease-to-use bootstrap framework based on Jekyll and Zurb Foundation. You can easily create and browse documents and the whole site is generated to reflect any changes. The Foundation default theme has been altered a little to align with <a href="http://sitcon.org">SITCON 2013</a> accent, as an administration flow proof-of-concept.</p>
-<p><a href="https://github.com/rschiang/yojigen">Fork</a> Yojigen on GitHub.</p>
+			<h2 id='building_and_running'>Building and Running</h2>
+
+<h3 id='prequisites'>Prequisites</h3>
+
+<ul>
+<li>Compass (SCSS)</li>
+
+<li>Zurb Foundation 4</li>
+
+<li>Jekyll</li>
+</ul>
+
+<h3 id='getting_started'>Getting Started</h3>
+
+<p>First, modify the <code>_config.yml</code> to meet your site&#8217;s information. The variables matter most are <code>site.title</code>, <code>site.url</code>, <code>site.baseurl</code>:</p>
+<div class='highlight'><pre><code class='yaml'><span class='l-Scalar-Plain'>title</span> <span class='p-Indicator'>:</span> <span class='l-Scalar-Plain'>Yojigen</span>
+<span class='l-Scalar-Plain'>url</span><span class='p-Indicator'>:</span> <span class='l-Scalar-Plain'>/yojigen/</span>
+<span class='l-Scalar-Plain'>baseurl</span><span class='p-Indicator'>:</span> <span class='l-Scalar-Plain'>/yojigen</span>
+</code></pre></div>
+<p>In yogigen&#8217;s default configuration, the site is hosted under a subdirectory. You may change them to reflect your actual site hierarchy.</p>
+
+<p>When you&#8217;re done with configuring, put each document under <code>_posts</code> folder, where the naming convention is <code>year-month-day-permalinkUrl</code>. Choosing <code>.md</code> as extension will grant you markdown features, while regardless of document type, Liquid templating syntax are always available. You can find out more in <a href='http://jekyllrb.com/docs/templates/'>Jekyll docs</a>.</p>
+
+<p>You should append the following header at the beginning of each file:</p>
+<div class='highlight'><pre><code class='yaml'><span class='nn'>---</span>
+<span class='l-Scalar-Plain'>layout</span><span class='p-Indicator'>:</span> <span class='l-Scalar-Plain'>entries</span>
+<span class='l-Scalar-Plain'>title</span><span class='p-Indicator'>:</span> <span class='l-Scalar-Plain'>&lt;Title&gt;</span>
+<span class='nn'>---</span>
+</code></pre></div>
+<p>Note that if you enlist any document under category <code>Main</code>, they&#8217;ll be displayed on the menu bar on top of the page.</p>
+
+<p>Now everything is ready. Run</p>
+<div class='highlight'><pre><code class='bash'>jekyll serve -w
+</code></pre></div>
+<p>and launch your browser to <code>http://localhost:4000/yojigen/</code>. You should see your docs shown up correctly now.</p>
 		</section>
 	</div>
 </div>
